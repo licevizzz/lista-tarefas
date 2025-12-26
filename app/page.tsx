@@ -41,8 +41,9 @@ return (
     value={texto}
     onChange={(e) => setTexto(e.target.value)}
   />
-  <button className="border px-3 py-1 bg-purple-400"  onClick={clicouNoBotao}>
-    Adicionar
+  <button className="border px-2 py-1 mb-3 bg-purple-400"  
+    onClick={clicouNoBotao}>
+      Adicionar
   </button>
 
   {tarefas.length === 0 && (
@@ -64,7 +65,7 @@ return (
         className="text-red-500 ml-auto"
         onClick={() => removerTarefa(index)}
       > 
-          ❌
+        ❌
       </button>
       </li>
     ))}
